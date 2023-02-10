@@ -1,0 +1,69 @@
+
+.main-wrapper{
+    margin-top: 6vh;    
+    /* background-color: red; */
+    height: 90vh;
+}
+
+.content-wrapper{
+    background-color: #f3f3f3;
+    height: 90vh;
+    border-radius: 5px;
+}
+
+.table-wrapper{
+    overflow-y: scroll;
+    position: relative;
+}
+
+.table-wrapper::-webkit-scrollbar {
+    width: 0.1em;
+  }
+   
+  .table-wrapper::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    width: 3px;
+  }
+   
+  .table-wrapper::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    width: 3px;
+  }
+
+.table-wrapper thead{
+    background-color: #f3f3f3 !important;
+}
+.table-wrapper thead tr{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #ffffff !important;
+}
+
+.table-image-wrapper img{
+    width: 70px;
+    height: 70px;
+}
+
+.actions{
+    cursor: pointer;
+}
+
+
+.actions svg{
+    width: 20px;
+    height: 20px;
+}
+
+.delete-product{
+
+}
+
+.delete-product svg:hover{
+    fill: #fd0d0d;
+}
+
+.edit-product svg:hover{
+    fill: #0d6efd;
+}
