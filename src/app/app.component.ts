@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,7 +11,7 @@ export class AppComponent {
   title = 'products_admin';
   updateIndex:number = 0; 
   enableUpdate = false;
-
+  JSON = JSON;
   addedProduct:any[] = [
     {quantity:10, imgUrl:'https://contents.mediadecathlon.com/p64484/9737346cc67b1751562cd9ecfb70e092/p64484.jpg',prodName:"Black Super Cargo Pant",category:"men", price:99.00},
     {quantity:40, imgUrl:'https://estilofashions.com/wp-content/uploads/2021/02/Mens-Jeans-Pant-1-1.jpg'         ,prodName:"Mens Jeans Pant 11",category:"men", price:99.00},
@@ -24,6 +26,11 @@ export class AppComponent {
   ];
 
   currentProduct = {prodName:'',imgUrl:'',quantity:0,category:"",price:0};
+
+  constructor() {
+    console.log(this.JSON);
+    
+  }
 
   fillEditData(prodIndex:any){
     this.enableUpdate = true;

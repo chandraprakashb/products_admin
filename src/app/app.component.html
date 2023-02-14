@@ -35,7 +35,7 @@
           </div>
           <button 
             class="btn btn-primary mt-1" 
-            (click)="addedProduct.push(currentProduct);" 
+            (click)="addedProduct.push(JSON.parse(JSON.stringify(currentProduct)));" 
             [ngStyle]="{display: enableUpdate?'none' : 'inline'}"
             >Add Product</button>
           <button 
